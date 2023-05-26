@@ -1,0 +1,50 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-03-25T20:47:53.572313",
+    "startedAt": "2023-03-25T20:47:52.508364",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "f:\\cv_material\\m6\\week3\\traindetr.py",
+    "codePath": "..\\traindetr.py",
+    "git": {
+        "remote": "https://github.com/facebookresearch/detr.git",
+        "commit": "3af9fa878e73b6894ce3596450a8d9b89d918ca9"
+    },
+    "email": "inigoauz.27@gmail.com",
+    "root": "F:/CV_MATERIAL/M6/WEEK3/detr",
+    "host": "iauzmendi",
+    "username": "inigo",
+    "executable": "C:\\Users\\inigo\\anaconda3\\envs\\gpu\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2304.0,
+        "min": 0.0,
+        "max": 2304.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2304.0,
+            "min": 0.0,
+            "max": 2304.0
+        }
+    ],
+    "disk": {
+        "total": 465.74511337280273,
+        "used": 230.5165901184082
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.784477233886719
+    }
+}

@@ -1,0 +1,11 @@
+Faster RCNN
+mAP: 0.56
+mIoU: 0.47
+
+DETR
+mAP: 0.63
+mIoU: 0.45
+
+YoloV8
+mAP: 0.45
+mIoU: 0.4

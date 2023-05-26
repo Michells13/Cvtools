@@ -1,0 +1,44 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-05-23T13:34:56.333085",
+    "startedAt": "2023-05-23T13:34:54.283003",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\MICHE\\Desktop\\Master\\MTP\\torch\\Week3\\trainDetr.py",
+    "codePath": "..\\trainDetr.py",
+    "host": "Michell",
+    "username": "MICHE",
+    "executable": "C:\\Users\\MICHE\\anaconda3\\envs\\pyT\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2496.0,
+        "min": 0.0,
+        "max": 2496.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2496.0,
+            "min": 0.0,
+            "max": 2496.0
+        }
+    ],
+    "disk": {
+        "total": 780.1389808654785,
+        "used": 581.548885345459
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.682872772216797
+    }
+}

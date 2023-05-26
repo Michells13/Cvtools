@@ -1,0 +1,125 @@
+2023-03-25 21:49:11,686 INFO    StreamThr :22656 [internal.py:wandb_internal():87] W&B internal server running at pid: 22656, started at: 2023-03-25 21:49:11.686733
+2023-03-25 21:49:11,688 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status
+2023-03-25 21:49:11,694 INFO    WriterThread:22656 [datastore.py:open_for_write():85] open: F:\CV_MATERIAL\M6\WEEK3\detr\wandb\run-20230325_214911-xxbz91o9\run-xxbz91o9.wandb
+2023-03-25 21:49:11,696 DEBUG   SenderThread:22656 [sender.py:send():336] send: header
+2023-03-25 21:49:11,729 DEBUG   SenderThread:22656 [sender.py:send():336] send: run
+2023-03-25 21:49:12,154 INFO    SenderThread:22656 [dir_watcher.py:__init__():219] watching files in: F:\CV_MATERIAL\M6\WEEK3\detr\wandb\run-20230325_214911-xxbz91o9\files
+2023-03-25 21:49:12,155 INFO    SenderThread:22656 [sender.py:_start_run_threads():1078] run started: xxbz91o9 with start time 1679777351.689953
+2023-03-25 21:49:12,155 DEBUG   SenderThread:22656 [sender.py:send_request():363] send_request: summary_record
+2023-03-25 21:49:12,155 INFO    SenderThread:22656 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-25 21:49:12,158 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: check_version
+2023-03-25 21:49:12,158 DEBUG   SenderThread:22656 [sender.py:send_request():363] send_request: check_version
+2023-03-25 21:49:12,324 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: run_start
+2023-03-25 21:49:12,345 DEBUG   HandlerThread:22656 [system_info.py:__init__():31] System info init
+2023-03-25 21:49:12,345 DEBUG   HandlerThread:22656 [system_info.py:__init__():46] System info init done
+2023-03-25 21:49:12,345 INFO    HandlerThread:22656 [system_monitor.py:start():183] Starting system monitor
+2023-03-25 21:49:12,345 INFO    SystemMonitor:22656 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-25 21:49:12,345 INFO    HandlerThread:22656 [system_monitor.py:probe():204] Collecting system info
+2023-03-25 21:49:12,351 INFO    SystemMonitor:22656 [interfaces.py:start():187] Started cpu monitoring
+2023-03-25 21:49:12,352 INFO    SystemMonitor:22656 [interfaces.py:start():187] Started disk monitoring
+2023-03-25 21:49:12,352 INFO    SystemMonitor:22656 [interfaces.py:start():187] Started gpu monitoring
+2023-03-25 21:49:12,353 INFO    SystemMonitor:22656 [interfaces.py:start():187] Started memory monitoring
+2023-03-25 21:49:12,360 INFO    SystemMonitor:22656 [interfaces.py:start():187] Started network monitoring
+2023-03-25 21:49:12,364 DEBUG   HandlerThread:22656 [system_info.py:probe():195] Probing system
+2023-03-25 21:49:12,365 DEBUG   HandlerThread:22656 [system_info.py:_probe_git():180] Probing git
+2023-03-25 21:49:12,421 DEBUG   HandlerThread:22656 [system_info.py:_probe_git():188] Probing git done
+2023-03-25 21:49:12,421 DEBUG   HandlerThread:22656 [system_info.py:probe():240] Probing system done
+2023-03-25 21:49:12,421 DEBUG   HandlerThread:22656 [system_monitor.py:probe():213] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.9.16', 'heartbeatAt': '2023-03-25T20:49:12.365608', 'startedAt': '2023-03-25T20:49:11.670701', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'f:\\cv_material\\m6\\week3\\traindetr.py', 'codePath': '..\\traindetr.py', 'git': {'remote': 'https://github.com/facebookresearch/detr.git', 'commit': '3af9fa878e73b6894ce3596450a8d9b89d918ca9'}, 'email': 'inigoauz.27@gmail.com', 'root': 'F:/CV_MATERIAL/M6/WEEK3/detr', 'host': 'iauzmendi', 'username': 'inigo', 'executable': 'C:\\Users\\inigo\\anaconda3\\envs\\gpu\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2304.0, 'min': 0.0, 'max': 2304.0}, 'cpu_freq_per_core': [{'current': 2304.0, 'min': 0.0, 'max': 2304.0}], 'disk': {'total': 465.74511337280273, 'used': 230.51663970947266}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 15.784477233886719}}
+2023-03-25 21:49:12,421 INFO    HandlerThread:22656 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-25 21:49:12,421 INFO    HandlerThread:22656 [system_monitor.py:probe():217] Publishing system info
+2023-03-25 21:49:12,421 DEBUG   HandlerThread:22656 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-25 21:49:12,422 DEBUG   HandlerThread:22656 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-25 21:49:12,422 DEBUG   HandlerThread:22656 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-25 21:49:12,424 ERROR   HandlerThread:22656 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] El sistema no puede encontrar el archivo especificado
+Traceback (most recent call last):
+  File "C:\Users\inigo\anaconda3\envs\gpu\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "C:\Users\inigo\anaconda3\envs\gpu\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\inigo\anaconda3\envs\gpu\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\inigo\anaconda3\envs\gpu\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] El sistema no puede encontrar el archivo especificado
+2023-03-25 21:49:12,425 DEBUG   HandlerThread:22656 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-25 21:49:12,425 INFO    HandlerThread:22656 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-25 21:49:12,433 DEBUG   SenderThread:22656 [sender.py:send():336] send: files
+2023-03-25 21:49:12,433 INFO    SenderThread:22656 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-25 21:49:12,454 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-25 21:49:12,455 DEBUG   SenderThread:22656 [sender.py:send_request():363] send_request: stop_status
+2023-03-25 21:49:12,637 DEBUG   SenderThread:22656 [sender.py:send():336] send: telemetry
+2023-03-25 21:49:13,165 INFO    Thread-17 :22656 [dir_watcher.py:_on_file_created():278] file/dir created: F:\CV_MATERIAL\M6\WEEK3\detr\wandb\run-20230325_214911-xxbz91o9\files\requirements.txt
+2023-03-25 21:49:13,165 INFO    Thread-17 :22656 [dir_watcher.py:_on_file_created():278] file/dir created: F:\CV_MATERIAL\M6\WEEK3\detr\wandb\run-20230325_214911-xxbz91o9\files\wandb-metadata.json
+2023-03-25 21:49:13,166 INFO    Thread-17 :22656 [dir_watcher.py:_on_file_created():278] file/dir created: F:\CV_MATERIAL\M6\WEEK3\detr\wandb\run-20230325_214911-xxbz91o9\files\conda-environment.yaml
+2023-03-25 21:49:13,166 INFO    Thread-17 :22656 [dir_watcher.py:_on_file_created():278] file/dir created: F:\CV_MATERIAL\M6\WEEK3\detr\wandb\run-20230325_214911-xxbz91o9\files\wandb-summary.json
+2023-03-25 21:49:13,309 INFO    wandb-upload_0:22656 [upload_job.py:push():138] Uploaded file C:\Users\inigo\AppData\Local\Temp\tmp9d_mh1muwandb\bnmst5l8-wandb-metadata.json
+2023-03-25 21:49:13,362 DEBUG   SenderThread:22656 [sender.py:send():336] send: telemetry
+2023-03-25 21:49:13,362 DEBUG   SenderThread:22656 [sender.py:send():336] send: run
+2023-03-25 21:49:13,595 INFO    SenderThread:22656 [sender.py:send_run():955] updated run: xxbz91o9
+2023-03-25 21:49:14,168 INFO    Thread-17 :22656 [dir_watcher.py:_on_file_modified():295] file/dir modified: F:\CV_MATERIAL\M6\WEEK3\detr\wandb\run-20230325_214911-xxbz91o9\files\config.yaml
+2023-03-25 21:49:17,630 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:49:22,675 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:49:27,453 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:49:27,454 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:49:27,714 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:49:32,489 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:49:32,732 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:49:37,538 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:49:37,780 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:49:42,599 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:49:42,814 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:49:43,401 INFO    Thread-17 :22656 [dir_watcher.py:_on_file_modified():295] file/dir modified: F:\CV_MATERIAL\M6\WEEK3\detr\wandb\run-20230325_214911-xxbz91o9\files\config.yaml
+2023-03-25 21:49:47,637 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:49:48,063 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:49:52,650 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:49:53,098 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:49:57,689 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:49:58,158 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:02,745 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:03,178 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:07,756 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:08,197 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:12,370 DEBUG   SystemMonitor:22656 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-25 21:50:12,371 DEBUG   SenderThread:22656 [sender.py:send():336] send: stats
+2023-03-25 21:50:12,799 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:13,373 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:17,814 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:18,403 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:22,865 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:23,432 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:27,914 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:28,470 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:32,957 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:33,508 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:37,976 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:38,538 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:42,383 DEBUG   SenderThread:22656 [sender.py:send():336] send: stats
+2023-03-25 21:50:43,003 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:44,388 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:48,039 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:49,424 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:53,075 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:54,441 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:50:58,084 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:50:59,465 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:51:03,124 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:51:04,484 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:51:08,160 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:51:09,515 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:51:12,385 DEBUG   SenderThread:22656 [sender.py:send():336] send: stats
+2023-03-25 21:51:13,173 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:51:15,426 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:51:18,204 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:51:20,450 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:51:23,246 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:51:25,481 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:51:28,292 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:51:30,549 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:51:33,350 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:51:35,588 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:51:38,378 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:51:40,632 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:51:42,390 DEBUG   SenderThread:22656 [sender.py:send():336] send: stats
+2023-03-25 21:51:43,437 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 21:51:46,407 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 21:51:48,456 DEBUG   HandlerThread:22656 [handler.py:handle_request():144] handle_request: keepalive

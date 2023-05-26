@@ -1,0 +1,29 @@
+2023-03-25 23:56:30,522 INFO    MainThread:38332 [wandb_setup.py:_flush():76] Configure stats pid to 38332
+2023-03-25 23:56:30,523 INFO    MainThread:38332 [wandb_setup.py:_flush():76] Loading settings from C:\Users\inigo\.config\wandb\settings
+2023-03-25 23:56:30,523 INFO    MainThread:38332 [wandb_setup.py:_flush():76] Loading settings from F:\CV_MATERIAL\M6\WEEK3\detr\wandb\settings
+2023-03-25 23:56:30,523 INFO    MainThread:38332 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-03-25 23:56:30,523 INFO    MainThread:38332 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-25 23:56:30,523 INFO    MainThread:38332 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': '..\\traindetr.py', 'program': 'f:\\cv_material\\m6\\week3\\traindetr.py'}
+2023-03-25 23:56:30,524 INFO    MainThread:38332 [wandb_init.py:_log_setup():506] Logging user logs to F:\CV_MATERIAL\M6\WEEK3\detr\wandb\run-20230325_235630-tcz7pdll\logs\debug.log
+2023-03-25 23:56:30,524 INFO    MainThread:38332 [wandb_init.py:_log_setup():507] Logging internal logs to F:\CV_MATERIAL\M6\WEEK3\detr\wandb\run-20230325_235630-tcz7pdll\logs\debug-internal.log
+2023-03-25 23:56:30,524 INFO    MainThread:38332 [wandb_init.py:_jupyter_setup():452] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001E83EAE1E20>
+2023-03-25 23:56:30,525 INFO    MainThread:38332 [wandb_init.py:init():546] calling init triggers
+2023-03-25 23:56:30,525 INFO    MainThread:38332 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {}
+2023-03-25 23:56:30,525 INFO    MainThread:38332 [wandb_init.py:init():602] starting backend
+2023-03-25 23:56:30,525 INFO    MainThread:38332 [wandb_init.py:init():606] setting up manager
+2023-03-25 23:56:30,550 INFO    MainThread:38332 [wandb_init.py:init():613] backend started and connected
+2023-03-25 23:56:30,553 INFO    MainThread:38332 [wandb_run.py:_label_probe_notebook():1202] probe notebook
+2023-03-25 23:56:30,553 INFO    MainThread:38332 [wandb_run.py:_label_probe_notebook():1212] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-25 23:56:30,554 INFO    MainThread:38332 [wandb_init.py:init():701] updated telemetry
+2023-03-25 23:56:30,601 INFO    MainThread:38332 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-25 23:56:31,116 INFO    MainThread:38332 [wandb_run.py:_on_init():2131] communicating current version
+2023-03-25 23:56:31,388 INFO    MainThread:38332 [wandb_run.py:_on_init():2140] got version response upgrade_message: "wandb version 0.14.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-25 23:56:31,388 INFO    MainThread:38332 [wandb_init.py:init():789] starting run threads in backend
+2023-03-25 23:56:31,738 INFO    MainThread:38332 [wandb_run.py:_console_start():2112] atexit reg
+2023-03-25 23:56:31,738 INFO    MainThread:38332 [wandb_run.py:_redirect():1967] redirect: SettingsConsole.OFF
+2023-03-25 23:56:31,739 INFO    MainThread:38332 [wandb_init.py:init():831] run started, returning control to user process
+2023-03-26 00:05:05,880 INFO    MainThread:38332 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-03-26 00:05:05,885 INFO    MainThread:38332 [wandb_init.py:_pause_backend():417] pausing backend
+2023-03-26 00:09:17,361 WARNING MsgRouterThr:38332 [router.py:message_loop():77] message_loop has been closed

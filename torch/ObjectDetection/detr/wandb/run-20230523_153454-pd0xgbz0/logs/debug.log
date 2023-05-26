@@ -1,0 +1,50 @@
+2023-05-23 15:34:54,288 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-05-23 15:34:54,288 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Configure stats pid to 23104
+2023-05-23 15:34:54,288 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Loading settings from C:\Users\MICHE\.config\wandb\settings
+2023-05-23 15:34:54,288 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Loading settings from C:\Users\MICHE\Desktop\Master\MTP\torch\Week3\detr\wandb\settings
+2023-05-23 15:34:54,288 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-23 15:34:54,288 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-23 15:34:54,289 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': '..\\trainDetr.py', 'program': 'C:\\Users\\MICHE\\Desktop\\Master\\MTP\\torch\\Week3\\trainDetr.py'}
+2023-05-23 15:34:54,289 INFO    MainThread:23104 [wandb_init.py:_log_setup():507] Logging user logs to C:\Users\MICHE\Desktop\Master\MTP\torch\Week3\detr\wandb\run-20230523_153454-pd0xgbz0\logs\debug.log
+2023-05-23 15:34:54,289 INFO    MainThread:23104 [wandb_init.py:_log_setup():508] Logging internal logs to C:\Users\MICHE\Desktop\Master\MTP\torch\Week3\detr\wandb\run-20230523_153454-pd0xgbz0\logs\debug-internal.log
+2023-05-23 15:34:54,289 INFO    MainThread:23104 [wandb_init.py:init():547] calling init triggers
+2023-05-23 15:34:54,289 INFO    MainThread:23104 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-05-23 15:34:54,290 INFO    MainThread:23104 [wandb_init.py:init():596] starting backend
+2023-05-23 15:34:54,290 INFO    MainThread:23104 [wandb_init.py:init():600] setting up manager
+2023-05-23 15:34:54,309 INFO    MainThread:23104 [wandb_init.py:init():606] backend started and connected
+2023-05-23 15:34:54,311 INFO    MainThread:23104 [wandb_init.py:init():700] updated telemetry
+2023-05-23 15:34:54,313 INFO    MainThread:23104 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-05-23 15:34:54,804 INFO    MainThread:23104 [wandb_run.py:_on_init():2177] communicating current version
+2023-05-23 15:34:54,924 INFO    MainThread:23104 [wandb_run.py:_on_init():2186] got version response 
+2023-05-23 15:34:54,925 INFO    MainThread:23104 [wandb_init.py:init():787] starting run threads in backend
+2023-05-23 15:35:04,117 INFO    MainThread:23104 [wandb_run.py:_console_start():2158] atexit reg
+2023-05-23 15:35:04,117 INFO    MainThread:23104 [wandb_run.py:_redirect():2013] redirect: SettingsConsole.OFF
+2023-05-23 15:35:04,118 INFO    MainThread:23104 [wandb_init.py:init():829] run started, returning control to user process
+2023-05-23 15:35:26,000 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-05-23 15:35:26,000 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Configure stats pid to 23104
+2023-05-23 15:35:26,000 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Loading settings from C:\Users\MICHE\.config\wandb\settings
+2023-05-23 15:35:26,000 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Loading settings from C:\Users\MICHE\Desktop\Master\MTP\torch\Week3\detr\wandb\settings
+2023-05-23 15:35:26,000 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-23 15:35:26,000 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-23 15:35:26,001 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': '..\\trainDetr.py', 'program': 'C:\\Users\\MICHE\\Desktop\\Master\\MTP\\torch\\Week3\\trainDetr.py'}
+2023-05-23 15:35:26,001 INFO    MainThread:23104 [wandb_init.py:_log_setup():507] Logging user logs to C:\Users\MICHE\Desktop\Master\MTP\torch\Week3\detr\wandb\run-20230523_153525-h1041d8j\logs\debug.log
+2023-05-23 15:35:26,001 INFO    MainThread:23104 [wandb_init.py:_log_setup():508] Logging internal logs to C:\Users\MICHE\Desktop\Master\MTP\torch\Week3\detr\wandb\run-20230523_153525-h1041d8j\logs\debug-internal.log
+2023-05-23 15:35:26,001 INFO    MainThread:23104 [wandb_init.py:init():547] calling init triggers
+2023-05-23 15:35:26,002 INFO    MainThread:23104 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-05-23 15:35:26,002 INFO    MainThread:23104 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2023-05-23 17:40:17,605 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-05-23 17:40:17,606 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Configure stats pid to 23104
+2023-05-23 17:40:17,606 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Loading settings from C:\Users\MICHE\.config\wandb\settings
+2023-05-23 17:40:17,606 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Loading settings from C:\Users\MICHE\Desktop\Master\MTP\torch\Week3\detr\wandb\settings
+2023-05-23 17:40:17,606 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-23 17:40:17,606 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-23 17:40:17,606 INFO    MainThread:23104 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': '..\\trainDetr.py', 'program': 'C:\\Users\\MICHE\\Desktop\\Master\\MTP\\torch\\Week3\\trainDetr.py'}
+2023-05-23 17:40:17,606 INFO    MainThread:23104 [wandb_init.py:_log_setup():507] Logging user logs to C:\Users\MICHE\Desktop\Master\MTP\torch\Week3\detr\wandb\run-20230523_174017-o5li1ljm\logs\debug.log
+2023-05-23 17:40:17,607 INFO    MainThread:23104 [wandb_init.py:_log_setup():508] Logging internal logs to C:\Users\MICHE\Desktop\Master\MTP\torch\Week3\detr\wandb\run-20230523_174017-o5li1ljm\logs\debug-internal.log
+2023-05-23 17:40:17,607 INFO    MainThread:23104 [wandb_init.py:init():547] calling init triggers
+2023-05-23 17:40:17,607 INFO    MainThread:23104 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-05-23 17:40:17,607 INFO    MainThread:23104 [wandb_init.py:init():591] wandb.init() called when a run is still active
+2023-05-23 17:58:47,583 WARNING MsgRouterThr:23104 [router.py:message_loop():77] message_loop has been closed

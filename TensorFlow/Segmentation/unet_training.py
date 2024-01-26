@@ -30,7 +30,19 @@ from optuna.visualization import matplotlib as optuna_plots
 
 
         
+'''
+Unet implementation with tensorflow
+        -Inputs:   
+                    input annotation
+                    input images
+        -Ouputs
+                    .h5 model
+                    learning curves 
 
+'''
+
+input_annotation='../../datasets/Segmentation/Clouds_customSmall/annotations/'
+input_images= '../../datasets/Segmentation/Clouds_customSmall/images/'
 
 
 
@@ -94,7 +106,9 @@ def image_generator(files, batch_size = batchSize, sz = Image_size):
     for f in batch:
 
         #get the masks. Note that masks are png files
-        mask = Image.open(f'annotations2/{f[:-5]}.png')
+        mask = Image.open(input_annotation + f[:-5] + '.png')
+
+        #mask = Image.open(f'annotations2/{f[:-5]}.png')
         mask = np.array(mask.resize(sz))
 
 
@@ -110,7 +124,9 @@ def image_generator(files, batch_size = batchSize, sz = Image_size):
         batch_y.append(mask)
 
         #preprocess the raw images
-        raw = Image.open(f'images/{f}')
+       # raw = Image.open(f'images/{f}')
+        raw = Image.open(input_images + f)
+
         raw = raw.resize(sz)
         raw = np.array(raw)
 
@@ -132,7 +148,7 @@ def image_generator(files, batch_size = batchSize, sz = Image_size):
 
 
 
-all_files = os.listdir('images')
+all_files = os.listdir(input_images)
 shuffle(all_files)
 
 split = int(ssplit * len(all_files))
@@ -262,7 +278,7 @@ class PlotLearning(keras.callbacks.Callback):
         output_filename = os.path.join(subfolder, "training_"+str(self.i)+".png") 
         #choose a random test image and preprocess
         path = np.random.choice(test_files)
-        raw = Image.open(f'images/{path}')
+        raw = Image.open('../../datasets/Segmentation/Clouds_customSmall/images/' + path)
         raw = np.array(raw.resize((512, 512)))/255.
         raw = raw[:,:,0:3]
 

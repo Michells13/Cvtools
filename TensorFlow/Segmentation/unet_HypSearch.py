@@ -25,11 +25,22 @@ import optuna
 from optuna.visualization import plot_optimization_history, plot_param_importances, plot_slice, plot_contour
 from optuna.visualization import matplotlib as optuna_plots
 #matplotlib.use('Agg')
+        
+'''
+Unet implementation with tensorflow
+        -Inputs:   
+                    input annotation
+                    input images
+        -Ouputs
+                    .h5 model
+                    learning curves 
 
+'''
 
+input_annotation='../../datasets/Segmentation/Clouds_customSmall/annotations/'
+input_images= '../../datasets/Segmentation/Clouds_customSmall/images/'
 
-
-epochs=3
+epochs=100
 val_samples=200
 
 def get_optimizer(name, trial):
@@ -93,7 +104,7 @@ def image_generator(files, batch_size = 32, sz = (256, 256)):
     for f in batch:
 
         #get the masks. Note that masks are png files
-        mask = Image.open(f'annotations/{f[:-4]}.png')
+        mask = Image.open(input_annotation + f[:-5] + '.png')
         mask = np.array(mask.resize(sz))
 
 
@@ -104,7 +115,7 @@ def image_generator(files, batch_size = 32, sz = (256, 256)):
         batch_y.append(mask)
 
         #preprocess the raw images
-        raw = Image.open(f'images/{f}')
+        raw = Image.open(input_images + f)
         raw = raw.resize(sz)
         raw = np.array(raw)
 
@@ -126,7 +137,7 @@ def image_generator(files, batch_size = 32, sz = (256, 256)):
 
 batch_size = 32
 
-all_files = os.listdir('images')
+all_files = os.listdir(input_images)
 shuffle(all_files)
 
 split = int(0.95 * len(all_files))
@@ -256,7 +267,7 @@ class PlotLearning(keras.callbacks.Callback):
         output_filename = os.path.join(subfolder, "training_"+str(self.i)+".png") 
         #choose a random test image and preprocess
         path = np.random.choice(test_files)
-        raw = Image.open(f'images/{path}')
+        raw = Image.open(input_images + path)
         raw = np.array(raw.resize((256, 256)))/255.
         raw = raw[:,:,0:3]
 

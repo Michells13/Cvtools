@@ -52,7 +52,7 @@ batch_size = 16
 epochs=10
 lr=0.00034
 opt=optimizers.Nadam(lr=lr)
-batchSize = 48 
+
 Image_size=(512, 512)
 ssplit=0.95
 val_samples=200
@@ -91,7 +91,7 @@ def plot_loss_accuracy_graphs(history, trial_number):
     plt.savefig(output_filename, bbox_inches="tight")
     plt.close()
 
-def image_generator(files, batch_size = batchSize, sz = Image_size):
+def image_generator(files, batch_size = batch_size, sz = Image_size):
 
   while True:
 
@@ -340,8 +340,8 @@ model.compile(optimizer=opt, loss='binary_crossentropy', metrics=[mean_iou])
 
 
 validation_samples = val_samples
-train_steps = len(train_files) //batchSize
-test_steps =  int(validation_samples //batchSize)+1
+train_steps = len(train_files) //batch_size
+test_steps =  int(validation_samples //batch_size)+1
  
 history=model.fit_generator(train_generator,
                     epochs = epochs, steps_per_epoch=train_steps ,validation_data = test_generator, validation_steps = test_steps,

@@ -1,7 +1,7 @@
 # Project Name
 
 ## Description
-Brief description of your project.
+There are eaech dataset link, go ahed and download those you need in this location of the project, take into account that if you change the name of them you will have to change also their name in each python script.
 
 ## Datasets
 Below is a list of links to download datasets related to this project:

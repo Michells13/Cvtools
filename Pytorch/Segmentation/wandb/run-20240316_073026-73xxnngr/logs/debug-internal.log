@@ -1,0 +1,208 @@
+2024-03-16 07:30:26,900 INFO    StreamThr :32860 [internal.py:wandb_internal():86] W&B internal server running at pid: 32860, started at: 2024-03-16 07:30:26.898539
+2024-03-16 07:30:26,904 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status
+2024-03-16 07:30:26,912 INFO    WriterThread:32860 [datastore.py:open_for_write():85] open: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\run-73xxnngr.wandb
+2024-03-16 07:30:26,915 DEBUG   SenderThread:32860 [sender.py:send():375] send: header
+2024-03-16 07:30:26,987 DEBUG   SenderThread:32860 [sender.py:send():375] send: run
+2024-03-16 07:30:27,470 INFO    SenderThread:32860 [dir_watcher.py:__init__():219] watching files in: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files
+2024-03-16 07:30:27,470 INFO    SenderThread:32860 [sender.py:_start_run_threads():1124] run started: 73xxnngr with start time 1710570626.891096
+2024-03-16 07:30:27,472 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: summary_record
+2024-03-16 07:30:27,474 INFO    SenderThread:32860 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-03-16 07:30:27,488 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: check_version
+2024-03-16 07:30:27,489 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: check_version
+2024-03-16 07:30:28,475 INFO    Thread-31 :32860 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files\wandb-summary.json
+2024-03-16 07:30:28,487 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:29,256 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: run_start
+2024-03-16 07:30:29,291 DEBUG   HandlerThread:32860 [system_info.py:__init__():31] System info init
+2024-03-16 07:30:29,291 DEBUG   HandlerThread:32860 [system_info.py:__init__():46] System info init done
+2024-03-16 07:30:29,292 INFO    HandlerThread:32860 [system_monitor.py:start():181] Starting system monitor
+2024-03-16 07:30:29,293 INFO    SystemMonitor:32860 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-03-16 07:30:29,293 INFO    HandlerThread:32860 [system_monitor.py:probe():201] Collecting system info
+2024-03-16 07:30:29,310 INFO    SystemMonitor:32860 [interfaces.py:start():190] Started cpu monitoring
+2024-03-16 07:30:29,311 INFO    SystemMonitor:32860 [interfaces.py:start():190] Started disk monitoring
+2024-03-16 07:30:29,313 INFO    SystemMonitor:32860 [interfaces.py:start():190] Started gpu monitoring
+2024-03-16 07:30:29,314 INFO    SystemMonitor:32860 [interfaces.py:start():190] Started memory monitoring
+2024-03-16 07:30:29,340 INFO    SystemMonitor:32860 [interfaces.py:start():190] Started network monitoring
+2024-03-16 07:30:29,340 DEBUG   HandlerThread:32860 [system_info.py:probe():195] Probing system
+2024-03-16 07:30:29,361 DEBUG   HandlerThread:32860 [system_info.py:_probe_git():180] Probing git
+2024-03-16 07:30:29,464 DEBUG   HandlerThread:32860 [system_info.py:_probe_git():188] Probing git done
+2024-03-16 07:30:29,464 DEBUG   HandlerThread:32860 [system_info.py:probe():240] Probing system done
+2024-03-16 07:30:29,464 DEBUG   HandlerThread:32860 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.9.16', 'heartbeatAt': '2024-03-16T06:30:29.355853', 'startedAt': '2024-03-16T06:30:26.843285', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'git@github.com:Michells13/Cvtools.git', 'commit': '49ae88330a879ac46d3c93aa9cfa4da15fa9953c'}, 'email': 'michellvsigno13@gmail.com', 'root': 'C:/Users/MICHE/Desktop/Github/Cvtools', 'host': 'Michell', 'username': 'MICHE', 'executable': 'C:\\Users\\MICHE\\anaconda3\\envs\\pyT\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 998.0, 'min': 0.0, 'max': 2496.0}, 'cpu_freq_per_core': [{'current': 998.0, 'min': 0.0, 'max': 2496.0}], 'disk': {'total': 780.1389808654785, 'used': 734.3025321960449}, 'gpu': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Laptop GPU', 'memory_total': 6442450944}], 'memory': {'total': 15.682872772216797}}
+2024-03-16 07:30:29,464 INFO    HandlerThread:32860 [system_monitor.py:probe():211] Finished collecting system info
+2024-03-16 07:30:29,465 INFO    HandlerThread:32860 [system_monitor.py:probe():214] Publishing system info
+2024-03-16 07:30:29,465 DEBUG   HandlerThread:32860 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-03-16 07:30:29,466 DEBUG   HandlerThread:32860 [system_info.py:_save_pip():67] Saving pip packages done
+2024-03-16 07:30:29,467 DEBUG   HandlerThread:32860 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-03-16 07:30:29,486 INFO    Thread-31 :32860 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files\requirements.txt
+2024-03-16 07:30:29,488 INFO    Thread-31 :32860 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files\conda-environment.yaml
+2024-03-16 07:30:33,544 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:33,858 INFO    Thread-16 :32860 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073001-milgo8u0\files\config.yaml
+2024-03-16 07:30:35,564 INFO    Thread-31 :32860 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files\conda-environment.yaml
+2024-03-16 07:30:35,638 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:30:35,639 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:30:35,639 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:30:35,639 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:30:35,756 DEBUG   HandlerThread:32860 [system_info.py:_save_conda():86] Saving conda packages done
+2024-03-16 07:30:35,758 INFO    HandlerThread:32860 [system_monitor.py:probe():216] Finished publishing system info
+2024-03-16 07:30:35,759 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:35,760 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: keepalive
+2024-03-16 07:30:35,762 DEBUG   SenderThread:32860 [sender.py:send():375] send: files
+2024-03-16 07:30:35,762 INFO    SenderThread:32860 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2024-03-16 07:30:35,779 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:30:35,780 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:30:35,973 DEBUG   SenderThread:32860 [sender.py:send():375] send: telemetry
+2024-03-16 07:30:36,519 INFO    wandb-upload_0:32860 [upload_job.py:push():137] Uploaded file C:\Users\MICHE\AppData\Local\Temp\tmp_5lx2h_hwandb\2pntnayz-wandb-metadata.json
+2024-03-16 07:30:36,607 INFO    Thread-31 :32860 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files\output.log
+2024-03-16 07:30:36,608 INFO    Thread-31 :32860 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files\wandb-metadata.json
+2024-03-16 07:30:38,111 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:38,627 INFO    Thread-31 :32860 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files\output.log
+2024-03-16 07:30:38,767 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:39,271 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:30:39,273 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:30:40,641 INFO    Thread-31 :32860 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files\output.log
+2024-03-16 07:30:41,681 INFO    Thread-31 :32860 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files\output.log
+2024-03-16 07:30:43,404 INFO    memory    :32860 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-03-16 07:30:43,405 DEBUG   SystemMonitor:32860 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-03-16 07:30:43,406 DEBUG   SystemMonitor:32860 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2024-03-16 07:30:43,407 DEBUG   SystemMonitor:32860 [system_monitor.py:_start():170] Publishing last batch of metrics
+2024-03-16 07:30:43,461 DEBUG   SenderThread:32860 [sender.py:send():375] send: stats
+2024-03-16 07:30:43,476 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:44,522 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:48,535 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:49,574 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:52,363 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:30:52,364 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:30:53,584 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:54,279 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:30:54,281 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:30:55,444 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:58,642 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:30:59,825 INFO    Thread-31 :32860 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\MICHE\Desktop\Github\Cvtools\Pytorch\Segmentation\wandb\run-20240316_073026-73xxnngr\files\config.yaml
+2024-03-16 07:31:00,511 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:02,615 DEBUG   SystemMonitor:32860 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-03-16 07:31:02,620 DEBUG   SenderThread:32860 [sender.py:send():375] send: stats
+2024-03-16 07:31:03,920 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:05,648 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:08,976 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:09,280 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:31:09,280 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:31:11,423 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:14,025 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:15,787 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:31:15,788 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:31:16,465 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:19,070 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:21,502 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:24,108 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:24,282 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:31:24,284 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:31:26,389 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:31:26,389 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:31:26,520 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:29,150 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:31,566 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:32,638 DEBUG   SenderThread:32860 [sender.py:send():375] send: stats
+2024-03-16 07:31:34,198 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:36,672 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:39,248 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:39,298 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:31:39,299 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:31:42,497 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:44,291 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:47,557 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:47,614 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:31:47,614 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:31:49,348 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:52,599 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:54,311 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:31:54,313 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:31:54,387 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:58,199 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:31:58,200 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:31:58,578 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:31:59,429 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:02,640 DEBUG   SenderThread:32860 [sender.py:send():375] send: stats
+2024-03-16 07:32:03,648 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:04,463 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:08,677 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:09,323 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:32:09,324 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:32:09,511 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:14,556 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:14,650 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:19,407 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:32:19,407 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:32:19,594 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:19,686 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:24,318 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:32:24,319 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:32:24,632 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:25,456 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:29,672 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:29,990 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:32:29,990 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:32:30,496 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:32,650 DEBUG   SenderThread:32860 [sender.py:send():375] send: stats
+2024-03-16 07:32:34,734 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:35,683 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:39,335 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:32:39,337 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:32:39,776 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:40,631 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:32:40,631 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:32:41,518 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:44,838 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:46,575 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:49,888 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:51,215 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:32:51,215 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:32:51,626 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:54,343 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:32:54,344 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:32:54,933 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:57,569 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:32:59,978 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:01,779 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:33:01,779 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:33:02,602 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:02,652 DEBUG   SenderThread:32860 [sender.py:send():375] send: stats
+2024-03-16 07:33:05,010 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:07,688 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:09,341 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:33:09,342 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:33:10,048 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:13,550 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:15,086 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:18,594 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:20,141 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:22,995 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:33:22,995 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:33:23,653 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:24,347 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:33:24,348 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:33:25,188 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:29,523 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:30,236 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:32,667 DEBUG   SenderThread:32860 [sender.py:send():375] send: stats
+2024-03-16 07:33:33,603 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:33:33,604 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:33:34,678 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:35,277 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:39,344 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:33:39,346 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:33:40,334 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:40,511 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:45,385 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:45,544 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:50,441 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:50,595 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:54,344 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: stop_status
+2024-03-16 07:33:54,345 DEBUG   SenderThread:32860 [sender.py:send_request():402] send_request: stop_status
+2024-03-16 07:33:55,470 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:33:56,958 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:33:56,959 ERROR   gpu       :32860 [interfaces.py:monitor():144] Failed to sample metric: No data
+2024-03-16 07:33:59,378 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: keepalive
+2024-03-16 07:34:00,507 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:34:04,404 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: keepalive
+2024-03-16 07:34:05,561 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report
+2024-03-16 07:34:05,612 DEBUG   SenderThread:32860 [sender.py:send():375] send: stats
+2024-03-16 07:34:05,612 DEBUG   HandlerThread:32860 [handler.py:handle_request():144] handle_request: status_report

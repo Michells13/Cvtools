@@ -1,0 +1,49 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.9.16",
+    "heartbeatAt": "2024-03-16T06:30:02.622746",
+    "startedAt": "2024-03-16T06:30:01.131253",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "git@github.com:Michells13/Cvtools.git",
+        "commit": "49ae88330a879ac46d3c93aa9cfa4da15fa9953c"
+    },
+    "email": "michellvsigno13@gmail.com",
+    "root": "C:/Users/MICHE/Desktop/Github/Cvtools",
+    "host": "Michell",
+    "username": "MICHE",
+    "executable": "C:\\Users\\MICHE\\anaconda3\\envs\\pyT\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 998.0,
+        "min": 0.0,
+        "max": 2496.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 998.0,
+            "min": 0.0,
+            "max": 2496.0
+        }
+    ],
+    "disk": {
+        "total": 780.1389808654785,
+        "used": 734.2921257019043
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.682872772216797
+    }
+}

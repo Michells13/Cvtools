@@ -1,2 +1,2 @@
 # Cvtools
-A bunch of templates and tools for computer vision :) 
+My own bunch of templates and tools for computer vision and DL :) 

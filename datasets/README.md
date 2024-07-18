@@ -6,11 +6,11 @@ Brief description of your project.
 ## Datasets
 Below is a list of links to download datasets related to this project:
 
-1. 1. [Clouds_custom](https://drive.google.com/drive/folders/16UtfUexDEyU9oJEWeF9ZW84pYV5yoIZi?usp=sharing)
+1. [Clouds_custom](https://drive.google.com/drive/folders/16UtfUexDEyU9oJEWeF9ZW84pYV5yoIZi?usp=sharing)
    - 11748 RGB and Mask 512x512 images of clouds for segmentation training/validation with alphabetic nomenclature.
    - Folders have the following names : "RGB_Images", "Mask" and "False_Color"
 
-2. [Clouds_customSmall](link_to_dataset_2)
+2. [Clouds_customSmall](https://drive.google.com/drive/folders/1TIxUnfizRX9CJkuik4dWaUcnzAZWOGIP?usp=sharing)
    - Small split of "Clouds_custom" of 1000  RGB and mask images.
    - Folders have the following names: "images", "annotations"
 3. [Cloudsen12_segmentation](link_to_dataset_3)

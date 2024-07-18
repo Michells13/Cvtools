@@ -31,7 +31,7 @@ from optuna.visualization import matplotlib as optuna_plots
 
         
 '''
-Unet implementation with tensorflow
+simple Unet implementation with tensorflow for segmentation
         -Inputs:   
                     input annotation
                     input images
@@ -44,19 +44,14 @@ Unet implementation with tensorflow
 input_annotation='../../datasets/Segmentation/Clouds_customSmall/annotations/'
 input_images= '../../datasets/Segmentation/Clouds_customSmall/images/'
 
-
-
-
 #Hyperparameters and other values 
-batch_size = 16
-epochs=10
+batch_size = 32
+epochs=20
 lr=0.00034
 opt=optimizers.Nadam(lr=lr)
-
-Image_size=(512, 512)
+Image_size=(256, 256)         #If you modify this value also change the input of the network
 ssplit=0.95
 val_samples=200
-
 
 
 
@@ -116,15 +111,11 @@ def image_generator(files, batch_size = batch_size, sz = Image_size):
         mask[mask >= 2] = 0
         mask[mask != 0 ] = 1
 
-        # # Preprocess the mask
-        # mask[mask == 0] = 1  # Change 0 to 255
-        # mask[mask == 255] = 0  # Change values other than 255 to 0
-
 
         batch_y.append(mask)
 
         #preprocess the raw images
-       # raw = Image.open(f'images/{f}')
+
         raw = Image.open(input_images + f)
 
         raw = raw.resize(sz)
@@ -173,12 +164,7 @@ msk = np.stack((msk,)*3, axis=-1)
 
 plt.imshow( np.concatenate([img, msk, img*msk], axis = 1))
 
-"""# IoU metric
-
-The intersection over union (IoU) metric is a simple metric used to evaluate the performance of a segmentation algorithm. Given two masks $y_{true}, y_{pred}$ we evaluate
-
-$$IoU = \frac{y_{true} \cap y_{pred}}{y_{true} \cup y_{pred}}$$
-"""
+""" metric"""
 
 def mean_iou(y_true, y_pred):
     yt0 = y_true[:,:,:,0]
@@ -190,7 +176,7 @@ def mean_iou(y_true, y_pred):
 
 """# Model"""
 
-def unet(sz = (512, 512, 3)):
+def unet(sz = (256, 256, 3)):
   x = Input(sz)
   inputs = x
 
@@ -271,7 +257,7 @@ class PlotLearning(keras.callbacks.Callback):
         print('i=',self.i,'loss=',logs.get('loss'),'val_loss=',logs.get('val_loss'),'mean_iou=',logs.get('mean_iou'),'val_mean_iou=',logs.get('val_mean_iou'))
         # Save the plot to a file (change the filename and format as needed)
         # Create a subfolder for saving the plot if it doesn't exist
-        subfolder = "results_Training"
+        subfolder = "Unet_results_simpleTraining"
         os.makedirs(subfolder, exist_ok=True)
         
         # Save the plot to a file inside the subfolder (change the filename and format as needed)
@@ -279,7 +265,7 @@ class PlotLearning(keras.callbacks.Callback):
         #choose a random test image and preprocess
         path = np.random.choice(test_files)
         raw = Image.open('../../datasets/Segmentation/Clouds_customSmall/images/' + path)
-        raw = np.array(raw.resize((512, 512)))/255.
+        raw = np.array(raw.resize((256, 256)))/255.
         raw = raw[:,:,0:3]
 
         #predict the mask
@@ -320,11 +306,9 @@ class PlotLearning(keras.callbacks.Callback):
         plt.legend()
         
         # Save the plots as images
-        output_filename = os.path.join(subfolder, "loss__t"+".png")
+        output_filename = os.path.join(subfolder, "loss_accuracy"+".png")
         plt.savefig(output_filename, bbox_inches="tight")
         plt.close()
-        # Increment the epoch counter
-        #self.i += 1
         ########################
 
 
@@ -351,36 +335,7 @@ val_loss = history.history['val_loss'][-1]
     
 
 
-"""# Testing"""
 
-# #!wget http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg -O test.jpg
-# for i in range(0,7):
-#     raw = Image.open('test/'+str(i)+'.jpg')
-#     raw = np.array(raw.resize((256, 256)))/255.
-#     raw = raw[:,:,0:3]
-    
-#     #predict the mask
-#     pred = model.predict(np.expand_dims(raw, 0))
-    
-#     #mask post-processing
-#     msk  = pred.squeeze()
-#     msk = np.stack((msk,)*3, axis=-1)
-#     msk[msk >= 0.5] = 1
-#     msk[msk < 0.5] = 0
-    
-#     #show the mask and the segmented image
-#     combined = np.concatenate([raw, msk, raw* msk], axis = 1)
-#     plt.axis('off')
-#     #plt.imshow(combined)
-#     # Save the plot to a file (change the filename and format as needed)
-#     # Create a subfolder for saving the plot if it doesn't exist
-#     subfolder = "results"
-#     os.makedirs(subfolder, exist_ok=True)
-    
-#     # Save the plot to a file inside the subfolder (change the filename and format as needed)
-#     output_filename = os.path.join(subfolder, "test_"+str(i)+".jpg") 
-#     plt.show()
-#     plt.savefig(output_filename, bbox_inches="tight")
 
 
 

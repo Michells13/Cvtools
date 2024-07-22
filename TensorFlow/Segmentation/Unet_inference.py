@@ -85,7 +85,7 @@ folder='test_images/'
 
 #!wget http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg -O test.jpg
 for i in range(0,7):
-    raw = Image.open(folder+str(i)+'.jpg')
+    raw = Image.open(folder+str(i)+'.jpeg')
     raw = np.array(raw.resize((256, 256)))/255.
     raw = raw[:,:,0:3]
     
@@ -108,6 +108,6 @@ for i in range(0,7):
     os.makedirs(subfolder, exist_ok=True)
     
     # Save the plot to a file inside the subfolder (change the filename and format as needed)
-    output_filename = os.path.join(subfolder, "test_"+str(i)+".jpg") 
+    output_filename = os.path.join(subfolder, folder +str(i)+".jpeg") 
     plt.show()
     plt.savefig(output_filename, bbox_inches="tight")

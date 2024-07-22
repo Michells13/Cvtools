@@ -1,5 +1,6 @@
 
 '''
+@author: MICHELL VARGAS SIGNORET
 --------HYPER-PARAMETER SEARCH------------------ 
 for a Unet implementation with tensorflow & Optuna 
 adapted for a cloud detection dataset.
@@ -61,8 +62,9 @@ import gc
         
 
 """Inputs"""
-input_annotation='../../datasets/Segmentation/Clouds_customSmall/annotations/'
-input_images= '../../datasets/Segmentation/Clouds_customSmall/images/'
+input_annotation='../../datasets/Segmentation/Clouds_customSmall/Masks/new_img/'
+input_images= '../../datasets/Segmentation/Clouds_customSmall/RGB_images/img/'
+image_formate='.png' #For Masks; take into account that they have to binary 1ch images.
 Image_size=(256, 256)
 ssplit=0.95
 val_samples=200
@@ -159,7 +161,7 @@ def image_generator(files, batch_size, sz = Image_size):
     for f in batch:
 
         #get the masks. Note that masks are png files
-        mask = Image.open(input_annotation + f[:-5] + '.png')
+        mask = Image.open(input_annotation + f[:-5] + image_formate)
 
         #mask = Image.open(f'annotations2/{f[:-5]}.png')
         mask = np.array(mask.resize(sz))
@@ -235,7 +237,7 @@ def objective(trial):
     
     ##Hyperparameters to optimize  ####################################
     learning_rate = trial.suggest_float('learning_rate', 0.0001, 0.1, log=True)
-    epochs= trial.suggest_int('epochs',1,10,step=1)
+    epochs= trial.suggest_int('epochs',1,5,step=1)
     batch_size = trial.suggest_int('batch_size',16,32, step=16)
     optimizer_name = trial.suggest_categorical('optimizer', ['SGD',  'Adagrad', 'Adadelta', 'Nadam'])
     opt= get_optimizer(optimizer_name, trial,learning_rate)
@@ -307,7 +309,7 @@ def objective(trial):
             output_filename = os.path.join(subfolder, "t_"+str(self.i)+".png") 
             #choose a random test image and preprocess
             path = np.random.choice(test_files)
-            raw = Image.open('../../datasets/Segmentation/Clouds_customSmall/images/' + path)
+            raw = Image.open('../../datasets/Segmentation/Clouds_customSmall/RGB_images/img/' + path)
             raw = np.array(raw.resize((256, 256)))/255.
             raw = raw[:,:,0:3]
 
